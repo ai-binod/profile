@@ -1,0 +1,19 @@
+{
+    "name": "ictmatrics/ictm-framework451",
+    "description": "ICTM Framework 451 root project template",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ICTM\\Framework451\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "ICTM\\Framework451\\InstallScript::initialSetup"
+        ]
+    }
+}
